@@ -250,6 +250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5409930385083377650}
   - component: {fileID: 5409930385086309408}
+  - component: {fileID: 6931966057492539363}
   m_Layer: 0
   m_Name: SM_Stag_01
   m_TagString: Untagged
@@ -320,6 +321,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000000014901161, y: 0.0357289, z: 0.11530784}
     m_Extent: {x: 0.062572636, y: 0.22771719, z: 0.19990173}
   m_DirtyAABB: 0
+--- !u!65 &6931966057492539363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5409930385083152554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12453262, y: 0.45791146, z: 0.3998035}
+  m_Center: {x: 0.0003064606, y: 0.034491375, z: 0.11530786}
 --- !u!1 &5409930385083159670
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +826,8 @@ GameObject:
   - component: {fileID: 5409930385090603620}
   - component: {fileID: 5409930386170430727}
   - component: {fileID: 114943098837739954}
+  - component: {fileID: 114062068821199688}
+  - component: {fileID: 8682414476169531869}
   m_Layer: 0
   m_Name: Animal_Stag_01
   m_TagString: Untagged
@@ -827,7 +843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5409930385083264986}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 7, y: 0, z: 12}
+  m_LocalPosition: {x: 5.4, y: 0.3, z: 12}
   m_LocalScale: {x: 18, y: 15, z: 18}
   m_Children:
   - {fileID: 5409930385083381048}
@@ -887,3 +903,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdf4ab0296c4ac04f9d5ad235ee88fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114062068821199688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5409930385083264986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee04d95e58f7b154c9ac18b0351fcb35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &8682414476169531869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5409930385083264986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11834688, y: 0.56883025, z: 0.37796083}
+  m_Center: {x: -0.00048781766, y: 0.16658103, z: 0.0032081075}

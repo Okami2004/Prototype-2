@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour
     public float leftboundary = -17.0f;
     public float rightboundary = 17.0f;
     public GameObject projectilePrefab; 
+    public float S = 0.001f;
+    public float F = 0.001f;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,13 +35,19 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-        } else if (Input.GetKeyUp(KeyCode.Space))
+            InvokeRepeating("ShootFood", S, F);
+        } else if (Input.GetKeyUp(KeyCode.I))
         {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+           CancelInvoke("ShootFood");
         }
 
     } 
+    
+    void ShootFood()
+    {  
+     Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+    }
+
 }       

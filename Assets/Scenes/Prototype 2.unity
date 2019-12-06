@@ -556,6 +556,7 @@ MonoBehaviour:
   - {fileID: 2097371893963982837, guid: fa6a5503f52755f48b5b02088fdfada9, type: 3}
   - {fileID: 887685837870882456, guid: df0c82fed1f4b8b458b2434b763e2b03, type: 3}
   - {fileID: 5409930385083264986, guid: 7ecd29ac73f26a34b95b44f0c98390e0, type: 3}
+  spawnInterval: 0.01
 --- !u!1 &1122619430 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100046, guid: f8abbdd178867d2419ba9feb6ff2cba0,
@@ -575,11 +576,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
-  speed: 17
+  speed: 255
   leftboundary: -17
   rightboundary: 17
   projectilePrefab: {fileID: 4050298660669184247, guid: 528e1217685fda24e8a227ea2637d76a,
     type: 3}
+  S: 0.001
+  F: 0.001
 --- !u!1 &1145183102
 GameObject:
   m_ObjectHideFlags: 0
